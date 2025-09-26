@@ -44,8 +44,6 @@ function App() {
           <span className="nav-title">Chanchal Verma</span>
         </div>
         <nav className="nav-links">
-          <a href="#music">Music</a>
-          <a href="#memories">Memories</a>
         </nav>
       </header>
 
