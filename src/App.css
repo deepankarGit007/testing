@@ -1,38 +1,160 @@
-.App {
+body, html, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url('/public/image/c1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /* filter: blur(4px); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.App > * {
+  filter: none;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffb6c1cc;
+  padding: 1em 2em;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #a52a2a;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  color: #800020;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff1493;
+}
+
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+  background: rgba(255, 240, 245, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff69b4aa;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #d1487e;
+  margin-bottom: 0.3em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 1.2rem;
+  color: #6b2758;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.music-section {
+  text-align: center;
+  margin-bottom: 3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.music-button {
+  background: #ff69b4;
+  border: none;
   color: white;
+  font-size: 1.3rem;
+  padding: 0.6em 1.4em;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #ff69b4aa;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.music-button:hover {
+  background: #ff1493;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.memories-section {
+  margin-bottom: 3em;
+}
+
+.memories-section h2 {
+  color: #b23a5b;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.memories-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5em;
+}
+
+.memory-item {
+  background: #ffe4e1cc;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ffb6c1aa;
+  width: 260px;
+  padding: 1em;
+  text-align: center;
+}
+
+.memory-item img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.7em;
+  box-shadow: 0 0 6px #ff69b4bb;
+}
+
+.memory-item p {
+  font-size: 1rem;
+  color: #872244;
+  font-style: italic;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  background: #ff69b4cc;
+  padding: 0.8em 0;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
