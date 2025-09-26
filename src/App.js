@@ -3,9 +3,9 @@ import Confetti from "react-confetti";
 import "./App.css";
 
 const memories = [
-  { photo: "/hbd-chanchu/public/image/c11.jpg", caption: "dash dash dash dash" },
-  { photo: "/hbd-chanchu/public/image/c21.jpg", caption: "dash dash dash" },
-  { photo: "/hbd-chanchu/public/image/c5.jpg", caption: "dash dash dash" },
+  { photo: "/c11.jpg", caption: "dash dash dash dash" },
+  { photo: "/c21.jpg", caption: "dash dash dash" },
+  { photo: "/c5.jpg", caption: "dash dash dash" },
   
 ];
 
