@@ -3,10 +3,26 @@ import Confetti from "react-confetti";
 import "./App.css";
 
 const memories = [
-  { photo: "/c11.jpg", caption: "dash dash dash dash" },
+  { photo: "/c4.jpg", caption: "dash dash dash" },
+  { photo: "/c2.jpg", caption: "dash dash dash" },
   { photo: "/c21.jpg", caption: "dash dash dash" },
-  { photo: "/c5.jpg", caption: "dash dash dash" },
-  
+  { photo: "/c3.jpg", caption: "dash dash dash" },
+  { photo: "/c27.jpg", caption: "dash dash dash" },
+  { photo: "/c25.jpg", caption: "dash dash dash" },
+  { photo: "/c29.jpg", caption: "dash dash dash" },
+  { photo: "/c9.jpg", caption: "dash dash dash" },
+  { photo: "/c14.jpg", caption: "dash dash dash" },
+  { photo: "/c13.jpg", caption: "dash dash dash" },
+  { photo: "/c15.jpg", caption: "dash dash dash" },
+  { photo: "/c12.jpg", caption: "dash dash dash" },
+  { photo: "/c17.jpg", caption: "dash dash dash" },
+  { photo: "/c20.jpg", caption: "dash dash dash" },
+  { photo: "/c1.jpg", caption: "dash dash dash" },
+  { photo: "/c7.jpg", caption: "dash dash dash" },
+  { photo: "/c22.jpg", caption: "dash dash dash" },
+  { photo: "/c19.jpg", caption: "dash dash dash" },
+  { photo: "/p4.jpg", caption: "dash dash dash" },
+
 ];
 
 function App() {
@@ -38,9 +54,7 @@ function App() {
       <Confetti width={dimensions.width} height={dimensions.height} />
       <header className="navbar">
         <div className="logo-section">
-          <img
-            src="/c6.jpg" alt="Logo" className="logo"
-          />
+          <img src="/c6.jpg" alt="Logo" className="logo"/>
           <span className="nav-title">Chanchal Verma</span>
         </div>
         <nav className="nav-links">

@@ -3,7 +3,7 @@ body, html, #root, .App {
   padding: 0;
   height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url('/public/image/c1.jpg') no-repeat center center fixed;
+  background: url('/public/image/c28.jpg') no-repeat center center fixed;
   background-size: cover;
   /* filter: blur(4px); */
   position: fixed;
@@ -28,7 +28,6 @@ body, html, #root, .App {
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 3;
 }
 
@@ -38,8 +37,8 @@ body, html, #root, .App {
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
   border-radius: 50%;
   border: 2px solid #fff;
@@ -48,7 +47,7 @@ body, html, #root, .App {
 .nav-title {
   font-weight: bold;
   font-size: 1.4rem;
-  color: #a52a2a;
+  color: #b32727;
 }
 
 .nav-links a {
@@ -110,6 +109,7 @@ p {
 
 .memories-section {
   margin-bottom: 3em;
+
 }
 
 .memories-section h2 {
@@ -130,7 +130,7 @@ p {
   background: #ffe4e1cc;
   border-radius: 15px;
   box-shadow: 0 0 10px #ffb6c1aa;
-  width: 260px;
+  width: 300px;
   padding: 1em;
   text-align: center;
 }
