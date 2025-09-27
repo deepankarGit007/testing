@@ -32,6 +32,15 @@ function App() {
     width: window.innerWidth,
     height: window.innerHeight,
   });
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+
+  const formatTime = (time) => {
+   if (!time) return "0:00";
+   const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+  };
 
   useEffect(() => {
     function handleResize() {
@@ -48,6 +57,21 @@ function App() {
       audioRef.current.pause();
     }
   }, [playMusic]);
+
+  useEffect(() => {
+  const audio = audioRef.current;
+
+  const updateTime = () => setCurrentTime(audio.currentTime);
+  const setAudioDuration = () => setDuration(audio.duration || 0);
+
+  audio.addEventListener('timeupdate', updateTime);
+  audio.addEventListener('loadedmetadata', setAudioDuration);
+
+  return () => {
+    audio.removeEventListener('timeupdate', updateTime);
+    audio.removeEventListener('loadedmetadata', setAudioDuration);
+  };
+}, []);
 
   return (
     <div className="App">
@@ -74,12 +98,31 @@ function App() {
 
         <section id="music" className="music-section">
           <audio ref={audioRef} src="/song.mp3" loop />
-          <button
-            className="music-button"
-            onClick={() => setPlayMusic(!playMusic)}
-          >
-            {playMusic ? "Pause 🎵" : "Play 🎶"}
-          </button>
+
+          <div className="player-controls">
+            <button
+              className="play-pause-button"
+              onClick={() => setPlayMusic(!playMusic)}
+             aria-label={playMusic ? "Pause music" : "Play music"}
+           >
+              {playMusic ? "⏸" : "▶"}
+           </button>
+
+           <div className="time-info">
+             <span>{formatTime(currentTime)}</span>
+             <input
+               type="range"
+               min="0"
+               max={duration || 0}
+               value={currentTime}
+               onChange={(e) => {
+                  audioRef.current.currentTime = e.target.value;
+                  setCurrentTime(Number(e.target.value));
+               }}
+                className="progress-bar"/>
+             <span>{formatTime(duration)}</span>
+           </div>
+         </div>
         </section>
 
         <section id="memories" className="memories-section">
