@@ -3,25 +3,25 @@ import Confetti from "react-confetti";
 import "./App.css";
 
 const memories = [
-  { photo: "/c4.jpg", caption: "dash dash dash" },
-  { photo: "/c2.jpg", caption: "dash dash dash" },
-  { photo: "/c21.jpg", caption: "dash dash dash" },
-  { photo: "/c3.jpg", caption: "dash dash dash" },
-  { photo: "/c27.jpg", caption: "dash dash dash" },
-  { photo: "/c25.jpg", caption: "dash dash dash" },
-  { photo: "/c29.jpg", caption: "dash dash dash" },
-  { photo: "/c9.jpg", caption: "dash dash dash" },
-  { photo: "/c14.jpg", caption: "dash dash dash" },
-  { photo: "/c13.jpg", caption: "dash dash dash" },
-  { photo: "/c15.jpg", caption: "dash dash dash" },
-  { photo: "/c12.jpg", caption: "dash dash dash" },
-  { photo: "/c17.jpg", caption: "dash dash dash" },
-  { photo: "/c20.jpg", caption: "dash dash dash" },
-  { photo: "/c1.jpg", caption: "dash dash dash" },
-  { photo: "/c7.jpg", caption: "dash dash dash" },
-  { photo: "/c22.jpg", caption: "dash dash dash" },
-  { photo: "/c19.jpg", caption: "dash dash dash" },
-  { photo: "/p4.jpg", caption: "dash dash dash" },
+  { photo: "/c4.jpg", caption: "Cool outfit..😎" },
+  { photo: "/c2.jpg", caption: "You are nature's choice(& I love this ponytail)" },
+  { photo: "/c21.jpg", caption: "This type of cuteness I was talking about" },
+  { photo: "/c3.jpg", caption: "ohh! damm.. pose" },
+  { photo: "/c27.jpg", caption: "Ummh! natak khali" },
+  { photo: "/c25.jpg", caption: "No doubt, Ekdum fursat me hi banaya gaya h" },
+  { photo: "/c29.jpg", caption: "My favourite one..😍" },
+  { photo: "/c9.jpg", caption: "Yaa, I clicked this one.." },
+  { photo: "/c14.jpg", caption: "Main to tha nahi udhar, dekh kise rahi thi.?" },
+  { photo: "/c13.jpg", caption: "or, tihadi kitna?" },
+  { photo: "/c15.jpg", caption: "Mere hi ghar aake muu banta h tera." },
+  { photo: "/c12.jpg", caption: "cutu-putu" },
+  { photo: "/c_.jpg", caption: "Outfit designed by you, per banane me mera bhi yogdaan  tha" },
+  { photo: "/c20.jpg", caption: "Main papa ki pari.." },
+  { photo: "/c17.jpg", caption: "a historical beauty in traditional wear" },
+  { photo: "/c7.jpg", caption: "Chhota Don" },
+  { photo: "/c22.jpg", caption: "Perfectly happy, loving your vibe" },
+  { photo: "/c19.jpg", caption: "Happy Birthday" },
+  { photo: "/p4.jpg", caption: "Be with me, I love You" },
 
 ];
 
@@ -71,7 +71,7 @@ function App() {
     audio.removeEventListener('timeupdate', updateTime);
     audio.removeEventListener('loadedmetadata', setAudioDuration);
   };
-}, []);
+  }, []);
 
   return (
     <div className="App">
@@ -87,12 +87,18 @@ function App() {
 
       <main>
         <section id="wish" className="wish-section">
-          <h1>Happy Birthday Chanchu...</h1>
+          <h1 id="hb">Happy Birthday </h1>
+          <h1 id="name">Chanchu</h1>
           <p>
-            need to be filled..
-            more 
-            more 
-            & some more
+            Hey, my pretty girl. Wishing a Happy Birthday to the person I adore the most, the one I love the most, the one I can sit with for hours, and yes, even the one I fight with the most. You are the only one (of course, after my family) I can talk about endlessly and adore wholeheartedly.
+            <br/>
+            We all know that a person doesn’t need a reason to love someone, but there will always be many reasons to hate. Yet, I have countless reasons to love you, and I love you far more than anyone could ever hate you. I love you from top to bottom (I know, that’s not much), I love you from your brightest self to your shadows, and I love you from me to you. I love the way you smile, the way you make cute faces, that little nose, those devilish eyes, and most of all, your perspective—how you look at the sky and cheer yourself. 
+            <br/>
+            How could I ever forget the most attractive things about you? You can sketch beautifully, dance gracefully, write mind-blowingly, handle a camera extraordinarily, edit photos and videos skillfully, help your father in the office, support your mother in the kitchen, care for your sisters, and, of course, guardian of a cute, innocent, gentleman's heart. Yes, I’m the luckiest person—not only blessed with a wonderful family and great friends but also with you, my pretty girl, who makes me the luckiest man in the world. Thank you so much for being there for me and my family.
+            <br/>
+            And so, I’ll end this tiny message here. Please don’t judge me—I’m not a writer.
+              But wait… there’s still more ahead. 
+              <br/><br/>Play the song and scroll ahead.......
           </p>
         </section>
 
@@ -126,7 +132,7 @@ function App() {
         </section>
 
         <section id="memories" className="memories-section">
-          <h2>Best Memories</h2>
+          <h2>Let's explore more ...</h2>
           <div className="memories-gallery">
             {memories.map((memory, index) => (
               <div key={index} className="memory-item">
