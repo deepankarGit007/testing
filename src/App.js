@@ -34,7 +34,6 @@ function App() {
   });
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-
   const formatTime = (time) => {
    if (!time) return "0:00";
    const minutes = Math.floor(time / 60);
