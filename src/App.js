@@ -91,11 +91,11 @@ function App() {
           <p>
             Hey, my pretty girl. Wishing a Happy Birthday to the person I adore the most, the one I love the most, the one I can sit with for hours, and yes, even the one I fight with the most. You are the only one (of course, after my family) I can talk about endlessly and adore wholeheartedly.
             <br/>
-            We all know that a person doesn’t need a reason to love someone, but there will always be many reasons to hate. Yet, I have countless reasons to love you, and I love you far more than anyone could ever hate you. I love you from top to bottom (I know, that’s not much), I love you from your brightest self to your shadows, and I love you from me to you. I love the way you smile, the way you make cute faces, that little nose, those devilish eyes, and most of all, your perspective—how you look at the sky and cheer yourself. 
+            We all know that a person doesn’t need a reason to love someone, but there will always be many reasons to hate. Yet, I have countless reasons to love you, and I love you far more than anyone could ever hate you. I love you from top to bottom (I know, that’s not much), I love you from your brightest self to your shadows, and I love you from me to you. I love the way you smile, the way you make cute faces, that little nose, those devilish eyes, and most of all, your perspective-how you look at the sky and cheer yourself. 
             <br/>
-            How could I ever forget the most attractive things about you? You can sketch beautifully, dance gracefully, write mind-blowingly, handle a camera extraordinarily, edit photos and videos skillfully, help your father in the office, support your mother in the kitchen, care for your sisters, and, of course, guardian of a cute, innocent, gentleman's heart. Yes, I’m the luckiest person—not only blessed with a wonderful family and great friends but also with you, my pretty girl, who makes me the luckiest man in the world. Thank you so much for being there for me and my family.
+            How could I ever forget the most attractive things about you? You can sketch beautifully, dance gracefully, write mind-blowingly, handle a camera extraordinarily, edit photos and videos skillfully, help your father in the office, support your mother in the kitchen, care for your sisters, and, of course, guardian of a cute, innocent, gentleman's heart. Yes, I’m the luckiest person-not only blessed with a wonderful family and great friends but also with you, my pretty girl, who makes me the luckiest man in the world. Thank you so much for being there for me and my family.
             <br/>
-            And so, I’ll end this tiny message here. Please don’t judge me—I’m not a writer.
+            And so, I’ll end this tiny message here. Please don’t judge me-I’m not a writer.
               But wait… there’s still more ahead. 
               <br/><br/>Play the song and scroll ahead.......
           </p>
